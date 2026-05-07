@@ -1,0 +1,7 @@
+# This file tells Jekyll how to build the website.
+# GitHub Pages reads these settings when it publishes the page.
+title: first-codex-project
+description: A beginner-friendly repository for learning ChatGPT Codex and GitHub workflows.
+
+# The Minima theme provides the base layout, and our CSS adds a fresh look.
+theme: minima

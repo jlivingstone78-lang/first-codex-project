@@ -1,0 +1,114 @@
+---
+# Jekyll front matter tells GitHub Pages to turn this file into CSS.
+---
+
+@import "minima";
+
+/*
+  This stylesheet adds a fresh look while keeping the project beginner friendly.
+  Each section below is labeled so new learners can see what the CSS controls.
+*/
+
+/* Use border-box so padding is easier to understand when sizing elements. */
+* {
+  box-sizing: border-box;
+}
+
+/* Give the page a soft background and a readable font stack. */
+body {
+  margin: 0;
+  color: #243041;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.18), transparent 32rem),
+    linear-gradient(135deg, #f8fafc 0%, #eef6ff 50%, #f5f3ff 100%);
+}
+
+/* Keep the page content centered and comfortably spaced. */
+.codex-page {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* The hero is the first thing visitors see, so it uses bold colors and spacing. */
+.hero {
+  padding: 4rem 2rem;
+  color: #ffffff;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  box-shadow: 0 24px 60px rgba(37, 99, 235, 0.25);
+}
+
+.hero h1 {
+  max-width: 780px;
+  margin: 0 0 1rem;
+  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* Badges quickly summarize the project in small, friendly labels. */
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.badge-list li {
+  padding: 0.45rem 0.8rem;
+  color: #e0e7ff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* This grid turns the learning sections into clean cards. */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.card ul,
+.card ol {
+  padding-left: 1.25rem;
+}
+
+/* The callout highlights an encouraging reminder for beginners. */
+.callout {
+  padding: 1.5rem;
+  border-left: 6px solid #7c3aed;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+/* The footer closes the page with a calm, centered note. */
+.site-footer-note {
+  margin-top: 2rem;
+  text-align: center;
+  color: #475569;
+}
